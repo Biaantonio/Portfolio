@@ -1,0 +1,189 @@
+/* Importando a fonte JetBrains Mono */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+body {
+    color: #1d1d1f;
+    background-color: #f0f0f0;
+    font-family: 'JetBrains Mono', monospace;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    cursor: default;
+}
+
+/* Container principal */
+.container {
+    padding: 0 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+article {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    flex-direction: column; 
+    text-align: center; 
+    row-gap: 10px;
+}
+
+/* Estilo do cabeçalho */
+header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: 500;
+    color: #1d1d1f;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+header h1:hover {
+    color: #0071e3; /* Cor muda ao passar o mouse */
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #222831;
+    transition: transform 0.3s ease;
+}
+
+header img:hover {
+    transform: scale(1.1); /* Efeito de zoom suave ao passar o mouse */
+}
+
+/* Seções principais */
+main {
+    margin: 40px 0;
+}
+
+main section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+section h3 {
+    font-size: 2em;
+    font-weight: 500;
+    color: #222831;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+    
+}
+
+section h3:hover {
+    color: #0071e3; /* Efeito de cor ao passar o mouse */
+}
+
+section p {
+    font-size: 1.2em;
+    color: #6e6e73;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilo do artigo (listas) */
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0;
+}
+
+article ol, article ul {
+    list-style: none;
+    padding: 0; /* Remove o padding do ul e ol */
+    margin: 0; /* Remove a margem do ul e ol */
+    display: flex;
+    justify-content: center;
+}
+
+article li {
+    background-color: #ffffff;
+    margin: 0 15px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.1em;
+    color: #1d1d1f;
+    font-weight: 500;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article li:hover {
+    transform: translateY(-5px); /* Efeito de levitar ao passar o mouse */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15); /* Sombra mais forte */
+    cursor: pointer;
+}
+
+/* Tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+    font-size: 1.1em;
+    color: #222831;
+}
+
+table th {
+    background-color: #f7f7f7;
+    font-weight: 600;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Rodapé */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #ffffff;
+    border-top: 1px solid #dddddd;
+    margin-top: 40px;
+}
+
+footer a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #005bb5;
+}
+
+footer img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+footer img:hover {
+    transform: scale(1.1);
+}
+
+footer p {
+    font-size: 0.9em;
+    color: #6e6e73;
+}

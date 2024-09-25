@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Receita de Doces</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+  <div id="menu"></div> <!-- Contêiner para o menu -->
+
+  <h1 class="text-4xl font-bold text-center my-8">Receitas de Doces</h1>
+
+  <div class="flex justify-center mb-8">
+    <img src="https://receitinhas.com.br/wp-content/uploads/2022/06/pote-da-felicidade-de-chocolate-730x365.jpg"
+      alt="Titulo de Doce" class="w-4/5 h-auto max-w-4xl rounded-lg shadow-lg" />
+  </div>
+
+  <p class="text-center mb-4">
+    <span class="font-semibold">Ana Beatriz</span> &nbsp;|&nbsp;
+    <span>RA: 2412225</span>
+  </p>
+
+  <h2 class="text-2xl text-center mb-6">
+    <b>Sua jornada de sabor começa aqui!</b> <br>
+    <i>Navegue pelas nossas receitas e descubra
+      a combinação perfeita de qualidade e doçura para qualquer ocasião.</i>
+  </h2>
+
+  <div class="px-6">
+    <p class="text-lg mb-4">As receitas mais procuradas:</p>
+    <ul class="list-disc list-inside">
+      <li>Bolo de Cenoura</li>
+      <li>Brownie</li>
+      <li>Pudim</li>
+      <li>Pavê</li>
+    </ul>
+  </div>
+
+  <div class="flex justify-center my-8">
+    <table class="table-auto border border-gray-300">
+      <thead>
+        <tr class="bg-gray-200">
+          <th class="p-4 border border-gray-300">Bolo de Cenoura</th>
+          <th class="p-4 border border-gray-300">Brownie</th>
+          <th class="p-4 border border-gray-300">Pudim</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="p-4 border border-gray-300">
+            <a href="https://receitinhas.com.br/receita/bolo-de-cenoura/" target="_blank">
+              <img src="https://bakeandcakegourmet.com.br/uploads/site/receitas/bolo-de-cenoura-sem-gluten-ghqgbkkh.jpg"
+                alt="Bolo de Cenoura"
+                class="w-72 h-72 object-cover rounded-lg shadow-md transition-transform duration-300 hover:scale-105" />
+            </a>
+          </td>
+          <td class="p-4 border border-gray-300">
+            <a href="https://receitinhas.com.br/receita/brownie-dos-brownies/#google_vignette" target="_blank">
+              <img src="https://img.cybercook.com.br/imagens/receitas/581/brownie-8-840x480.jpeg?q=75" alt="Brownie"
+                class="w-72 h-72 object-cover rounded-lg shadow-md transition-transform duration-300 hover:scale-105" />
+            </a>
+          </td>
+          <td class="p-4 border border-gray-300">
+            <a href="https://receitinhas.com.br/receita/pudim-de-leite-ninho-com-leite-condensado/" target="_blank">
+              <img
+                src="https://static.itdg.com.br/images/640-400/d1307a2e17cda187df76b78cfd3ac464/shutterstock-2322251819-1-.jpg"
+                alt="Pudim"
+                class="w-72 h-72 object-cover rounded-lg shadow-md transition-transform duration-300 hover:scale-105" />
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="flex justify-center my-8">
+    <table class="table-auto border border-gray-300">
+      <thead>
+        <tr class="bg-gray-200">
+          <th class="p-4 border border-gray-300">Pavê</th>
+          <th class="p-4 border border-gray-300">Mousse de Morango</th>
+          <th class="p-4 border border-gray-300">Bolo de Chocolate</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="p-4 border border-gray-300">
+            <a href="https://receitinhas.com.br/receita/pave-rapido-de-doce-de-leite-com-cobertura-de-chocolate/"
+              target="_blank">
+              <img src="https://panelaterapia.com/wp-content/uploads/2023/09/receita-pave-tradicional-758x505.jpg"
+                alt="Pavê"
+                class="w-72 h-72 object-cover rounded-lg shadow-md transition-transform duration-300 hover:scale-105" />
+            </a>
+          </td>
+          <td class="p-4 border border-gray-300">
+            <a href="https://receitinhas.com.br/receita/mousse-de-morangos/" target="_blank">
+              <img src="https://receitinhas.com.br/wp-content/uploads/2016/12/Mousse_de_morango-730x365.jpg"
+                alt="Mousse de Morango"
+                class="w-72 h-72 object-cover rounded-lg shadow-md transition-transform duration-300 hover:scale-105" />
+            </a>
+          </td>
+          <td class="p-4 border border-gray-300">
+            <a href="https://receitinhas.com.br/receita/bolo-de-chocolate-de-dia-das-maes/" target="_blank">
+              <img src="https://leouve.com.br/wp-content/uploads/2023/08/bolo-chocolate-simples-1.jpg"
+                alt="Bolo de Chocolate"
+                class="w-72 h-72 object-cover rounded-lg shadow-md transition-transform duration-300 hover:scale-105" />
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p class="text-center mt-8 mb-4">
+    (Clique em cima das imagens para ser redirecionado ao link da receita.)
+  </p>
+
+  <script>
+    // Função para carregar o menu
+    document.addEventListener("DOMContentLoaded", function () {
+      fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('menu').innerHTML = data;
+        })
+        .catch(error => console.error('Erro ao carregar o menu:', error));
+    });
+  </script>
+
+  <footer class="text-center p-4 bg-rose-700 text-white">
+    <p>&copy; 2024 Ana Beatriz | RA: 2412225.</p>
+  </footer>
+</body>
+
+</html>
